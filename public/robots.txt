@@ -1,0 +1,7 @@
+# robots.txt para https://estebankroh.com
+
+User-agent: *
+Allow: /
+
+Sitemap: https://estebankroh.com/sitemap.xml
+Host: https://estebankroh.com
