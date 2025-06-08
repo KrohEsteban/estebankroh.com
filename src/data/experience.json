@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Desarrollador",
+    "company": "Nubity",
+    "period": "2023 - Actualidad",
+    "description": "Desarrollé APIs para el Banco de La Pampa, integrando sistemas legados, migrando lógica a stored procedures y creando interfaces de administración internas."
+  },
+  {
+    "title": "Freelancer",
+    "company": "Proyectos personales",
+    "period": "2022 - 2023",
+    "description": "Sitios institucionales, blogs y e-commerce usando Svelte, Wordpress, Next.js y Strapi."
+  }
+]

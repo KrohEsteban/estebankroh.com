@@ -1,11 +1,46 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import Experience from '../components/Experience.astro';
+import TechList from '../components/TechList.astro';
+import EstebanSVG from '../components/EstebanSVG.astro';
+import '../styles/global.css';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+const pageTitle = 'Esteban Kroh – Desarrollador Backend';
+const pageDescription = 'CV online de Esteban Kroh. Experiencia en desarrollo backend, automatización y despliegues en AWS.';
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={pageDescription} />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={pageDescription} />
+    <meta property="og:image" content="/perfil.webp" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://estebankroh.com" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={pageDescription} />
+    <meta name="twitter:image" content="/perfil.webp" />
+  </head>
+  <body>
+    <header>
+      <main>
+        <EstebanSVG />
+        <p>Desarrollador Backend · Fullstack · DevOps</p>
+
+        <section>
+          <h2>Sobre mí</h2>
+          <p>Soy desarrollador backend con experiencia en proyectos bancarios, APIs, automatización y despliegue en AWS. Me interesa la optimización de procesos, la documentación clara y la arquitectura limpia.</p>
+        </section>
+        <Experience />
+        <TechList />
+      </main>
+    </header>
+  </body>
+</html>
