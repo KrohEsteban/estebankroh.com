@@ -1,6 +1,6 @@
 [
-  "HTML", "CSS", "JavaScript", "TypeScript",
-  "SvelteKit", "React", "Next.js",
-  "Symfony", "PHP", "MySQL", "DB2",
-  "Docker", "Git", "AWS"
+  { "name": "HTML, CSS, JavaScript, TypeScript", "color": "#f7df1e", "level": 90 },
+  { "name": "SvelteKit, React, Next.js", "color": "#3178c6", "level": 85 },
+  { "name": "Symfony, PHP, MySQL, DB2", "color": "#ff3e00", "level": 80 },
+  { "name": "Docker, Git, AWS", "color": "#6f00ff", "level": 75 }
 ]

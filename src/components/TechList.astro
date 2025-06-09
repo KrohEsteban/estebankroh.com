@@ -4,7 +4,75 @@ import tech from '../data/tech.json';
 
 <section>
   <h2>Tecnologías</h2>
-  <ul>
-    {tech.map(t => <li>{t}</li>)}
-  </ul>
+  <div class="tech-list">
+    {tech.map(t => (
+      <div class="tech-item">
+        <div class="tech-logo" style={`background: ${t.color}`}></div>
+        <div class="tech-info">
+          <span>{t.name}</span>
+          <div class="bar">
+            <div class="fill inactive" style={`--target-width: ${t.level}%;`} />
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
 </section>
+
+<style>
+  .tech-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+  }
+  .tech-item {
+    display: flex;
+    align-items: center;
+    background: #1a1d24;
+    border-radius: 8px;
+    padding: 0.5rem;
+  }
+  .tech-logo {
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+  }
+  .bar {
+    flex: 1;
+    height: 8px;
+    background: #333;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .fill {
+    height: 100%;
+    background: var(--accent, #4ade80);
+    width: 0;
+    transition: width 1s ease-out;
+  }
+  .fill:not(.inactive) {
+    width: var(--target-width);
+  }
+  @keyframes fill-bar {
+    from { width: 0; }
+    to { width: var(--final, 100%); }
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.remove('inactive');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.3
+    });
+
+    document.querySelectorAll('.fill').forEach(el => observer.observe(el));
+  });
+</script>

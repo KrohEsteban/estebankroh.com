@@ -4,11 +4,17 @@ import experience from '../data/experience.json';
 
 <section>
   <h2>Experiencia</h2>
-  {experience.map((item) => (
-    <div>
-      <h3>{item.title} - {item.company}</h3>
-      <p><em>{item.period}</em></p>
-      <p>{item.description}</p>
+  {experience.map(e => (
+    <div class="exp-card">
+      <h3>{e.title}</h3>
+      <p><em>{e.company} – {e.period}</em></p>
+      <p>{e.description}</p>
+      <ul>
+        {e.responsibilities.map(r => <li>🎯 {r}</li>)}
+      </ul>
+      <ul>
+        {e.achievements.map(a => <li>🏆 {a}</li>)}
+      </ul>
     </div>
   ))}
 </section>

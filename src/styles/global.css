@@ -35,3 +35,26 @@ ul {
 section {
   margin-bottom: 2.5rem;
 }
+
+.perfil-container svg {
+	width: 500px;
+	max-width: 100%;
+	height: auto;
+}
+
+.perfil-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.perfil {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--accent);
+}
