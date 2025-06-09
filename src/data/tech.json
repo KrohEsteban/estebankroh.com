@@ -1,6 +1,32 @@
 [
-  { "name": "HTML, CSS, JavaScript, TypeScript", "color": "#f7df1e", "level": 90 },
-  { "name": "SvelteKit, React, Next.js", "color": "#3178c6", "level": 85 },
-  { "name": "Symfony, PHP, MySQL, DB2", "color": "#ff3e00", "level": 80 },
-  { "name": "Docker, Git, AWS", "color": "#6f00ff", "level": 75 }
+	{
+		"name": "HTML - JS - CSS - Tailwind - Bootstrap",
+    "color": "#ec7063",
+		"level": 70
+	},
+	{
+		"name": "NextJS - SvelteKit - Astro",
+    "color": "#8e44ad",
+		"level": 65
+	},
+	{
+		"name": "Php - Symfony - Spring Boot - JAVA",
+    "color": "#3498db",
+		"level": 50
+	},
+	{
+		"name": "Docker - Git - Bash - AWS",
+    "color": "#16a085",
+		"level": 70
+	},
+	{
+		"name": "Wordpress - Strapi - Payload CMS",
+    "color": "#2ecc71",
+		"level": 65
+	},
+	{
+		"name": "IBM DB2 - MongoDB - MySql",
+    "color": "#f39c12",
+		"level": 60
+	}
 ]

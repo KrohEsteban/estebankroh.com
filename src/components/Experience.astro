@@ -7,7 +7,7 @@ import experience from '../data/experience.json';
   {experience.map(e => (
     <div class="exp-card">
       <h3>{e.title}</h3>
-      <p><em>{e.company} – {e.period}</em></p>
+      <p><em>{e.company}  /  {e.period}</em></p>
       <p>{e.description}</p>
       <ul>
         {e.responsibilities.map(r => <li>🎯 {r}</li>)}

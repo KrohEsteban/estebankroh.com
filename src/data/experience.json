@@ -5,13 +5,13 @@
     "period": "2022 - Actualidad",
     "description": "Trabajo en una célula dedicada a un banco, desarrollando soluciones backend.",
     "responsibilities": [
-      "Desarrollo de endpoints REST en Java y Spring Boot",
-      "Integración con bases de datos DB2 y MySQL",
-      "Mantenimiento y creación de stored procedures para procesos bancarios"
+      "Desarrollo de endpoints REST en Java y Spring Boot.",
+      "Integración con bases de datos DB2 y MySQL.",
+      "Mantenimiento y creación de stored procedures para procesos bancarios."
     ],
     "achievements": [
-      "Reducción del tiempo de desarrollo",
-      "Manejo de Skeletons para actualizaciónes globales de dependencias"
+      "Reducción del tiempo de desarrollo.",
+      "Manejo de Skeletons para actualizaciónes globales de dependencias."
     ]
   },
   {
@@ -20,12 +20,12 @@
     "period": "2021 - 2022",
     "description": "Sitios institucionales, blogs y e-commerce usando Svelte, Wordpress, Next.js y Strapi.",
     "responsibilities": [
-      "Desarrollo de FrontEnd y SEO",
-      "Gestión de todo el proceso de hosting para cada proyecto"
+      "Desarrollo de FrontEnd y SEO.",
+      "Gestión de todo el proceso de hosting para cada proyecto."
     ],
     "achievements": [
-      "Primeros lugares en el buscador con las palabras claves de cada cliente",
-      "Personalización de CMS para cada cliente"
+      "Primeros lugares en el buscador con las palabras claves de cada cliente.",
+      "Personalización de CMS para cada cliente."
     ]
   }
 ]
