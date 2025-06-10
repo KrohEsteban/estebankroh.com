@@ -3,7 +3,7 @@
     "title": "Desarrollador",
     "company": "Nubity",
     "period": "2022 - Actualidad",
-    "description": "Trabajo en una célula dedicada a un banco, desarrollando soluciones backend. En este rol, participo en el desarrollo de aplicaciones internas, que incluyeron desde aplicaciones completas en PHP y Symfony, hasta la creación de endpoints con Java para otras plataformas más grandes, conectándonos directamente a la base de datos del banco. Además, trabajé en el desarrollo de stored procedures dentro de la base de datos, los cuales generaban nueva información para su posterior utilización. Este trabajo me permitió aprender sobre tecnologías que no conocía y demostrar mi capacidad para adaptarme a los cambios.",
+    "description": "Trabajo en una célula dedicada a un banco, desarrollando soluciones backend. En este rol, participo en el desarrollo de aplicaciones internas y la creación de apis con Java para otras plataformas más grandes, conectándonos directamente a la base de datos del banco. Además, trabajé en el desarrollo de stored procedures dentro de la base de datos, los cuales generaban nueva información para su posterior utilización. Siempre teniendo en cuenta que la empresa es partner de AWS por lo tanto buscamos creamos soluciónes basadas en la nube.",
     "responsibilities": [
       "Desarrollo de endpoints REST en Java y Spring Boot.",
       "Integración con bases de datos DB2 y MySQL.",
