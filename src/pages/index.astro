@@ -39,7 +39,16 @@ const pageDescription = 'CV online de Esteban Kroh. Experiencia en desarrollo ba
     <header>
       <main>
         <div class="perfil-container">
-          <Image src={Perfil} alt="Perfil Esteban Kroh." class="perfil" />
+          <div class="blur-wrapper">
+            <Image
+              src={Perfil}
+              alt="Perfil Esteban Kroh"
+              class="perfil"
+              width={150}
+              height={150}
+              loading="eager"
+            />
+          </div>
           <EstebanSVG />
         </div>
         <h2 style={`text-align: center`}>Desarrollador Backend · Fullstack · DevOps</h2>
@@ -55,3 +64,21 @@ const pageDescription = 'CV online de Esteban Kroh. Experiencia en desarrollo ba
     </header>
   </body>
 </html>
+
+<script>
+  const imgs = document.querySelectorAll('.perfil-img') as NodeListOf<HTMLImageElement>;
+  if (typeof window !== 'undefined') {
+    document.addEventListener('DOMContentLoaded', () => {
+      const imgs = document.querySelectorAll('.perfil') as NodeListOf<HTMLImageElement>;
+      imgs.forEach(img => {
+        if (img.complete) {
+          img.setAttribute('loaded', '');
+        } else {
+          img.addEventListener('load', () => {
+            img.setAttribute('loaded', '');
+          });
+        }
+      });
+    });
+  }
+</script>
